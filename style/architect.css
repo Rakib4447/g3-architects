@@ -34,6 +34,12 @@ color: #727272;
     max-width: 1440px;
     margin: 0 auto;
 }
+.tex_color{
+    color: #ff900e;
+}
+.section_title{
+    font-size: 2.8rem;
+}
 
 
 /* header styles */
@@ -94,16 +100,30 @@ color: #727272;
 .our_features{
 max-width: 540px;
 }
-.features_title{
+/* .features_title{
     font-size: 2.8rem;
-}
+} */
 #quick_list{
     font-weight: 700;
 }
 
 /* responsive media query */
 @media screen and (max-width: 576px){
-    .navbar, .nav_links{
+    .navbar, .nav_links, .teams{
         flex-direction: column;
+    }
+    .team_img_container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* Medium size device */
+@media screen and (min-width:576px) and (max-width: 992px) {
+    .teams{
+        flex-direction: column;
+
+    }
+    .our_features{
+        margin-left: 30px;
     }
 }
